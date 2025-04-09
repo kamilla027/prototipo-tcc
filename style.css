@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f1a; /* tom bem escuro para combinar com o fundo da imagem */
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1a1a2e; /* azul escuro roxo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5px;
+}
+
+header .logo {
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 70px;
+    margin-right: 10px;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 4px #8c52ff); /* leve brilho roxo */
+    border-radius: 8px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Segoe UI', sans-serif;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header ul li a:hover {
+    transform: scale(1.2);
+    color: #8c52ff; /* roxo vibrante ao passar o mouse */
+}
+
+.title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 30px;
+    color: #8c52ff;
+    margin-left: 36%;
+    margin-top: 2%;
+    text-align: left;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    background-color: #1a1a2e;
+    padding: 30px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(140, 82, 255, 0.3); /* sombra roxa */
+}
+
+form label {
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.icon-placeholder {
+    width: 40px;
+    height: 40px;
+    background-color: #8c52ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+form input,
+form select {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #8c52ff;
+    border-radius: 8px;
+    background-color: #0f0f1a;
+    color: #ffffff;
+}
+
+form input::placeholder {
+    color: #aaaaaa;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8c52ff;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+}
+
+form button:hover {
+    background-color: #6a30cc;
+}
+
+form p a {
+    text-decoration: none;
+    color: #8c52ff;
+    font-size: 16px;
+}
+
+form p a:hover {
+    text-decoration: underline;
+    color: #b991ff;
+}
+
+.link a {
+    text-decoration: none;
+    color: #8c52ff;
+    font-size: 20px;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    color: #b991ff;
+}
+
+.video-slide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.3; 
+}
+
+.sobre-nos {
+    background-color: rgba(26, 26, 46, 0.9);
+    padding: 30px 40px 50px 40px; /* padding-top menor */
+    margin: 20px 0 40px 40px; /* margem-top menor */
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(140, 82, 255, 0.226);
+}
+
+.container-sobre h1 {
+    font-size: 36px;
+    color: #8c52ff;
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 10px;
+    text-align: center; /* alinhado à esquerda */
+}
+
+.container-sobre p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: left;
+}
+
+.container-sobre em {
+    color: #b991ff;
+    font-style: italic;
+    display: block;
+    margin-top: 10px;
+}
+
+.container-sobre blockquote {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #1f1f30;
+    border-left: 6px solid #8c52ff;
+    font-style: italic;
+    font-size: 20px;
+    color: #d1c1ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top left, #1a1a1a, #0e0e0e);
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+/* FUMAÇA ARROXEADA RASTEJANDO */
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: radial-gradient(ellipse at 50% 100%, rgba(124, 77, 255, 0.15) 0%, transparent 70%),
+                radial-gradient(ellipse at 20% 120%, rgba(124, 77, 255, 0.08) 0%, transparent 80%),
+                radial-gradient(ellipse at 80% 130%, rgba(124, 77, 255, 0.12) 0%, transparent 70%);
+    animation: smokeMove 20s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: screen;
+  }
+  
+  @keyframes smokeMove {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translateY(-10px) scale(1.05);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 0.6;
+    }
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    background-color: #121212;
+    box-shadow: 0 2px 8px rgba(124, 77, 255, 0.3);
+    border-bottom: 1px solid #292929;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo {
+    height: 70px;
+    width: 70px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 6px #7c4dff);
+  }
+  
+  .header-left h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    letter-spacing: 1.2px;
+    text-shadow: 0 0 10px rgba(124, 77, 255, 0.4);
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+  }
+  
+  .header-left h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 50%;
+    height: 2px;
+    background: linear-gradient(90deg, #7c4dff, transparent);
+    opacity: 0.5;
+    border-radius: 4px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .record {
+    font-size: 1rem;
+    color: #b7aaff;
+    opacity: 0.9;
+  }
+  
+  .user-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+  }
+  
+  .user-icon:hover {
+    color: #7c4dff;
+  }
+  
+  /* MAIN E BOXES */
+  main {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px 60px;
+    align-content: center;
+    justify-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .box {
+    background: #1a1a1a;
+    border: 2px solid #7c4dff;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    box-shadow: 0 0 12px rgba(124, 77, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 280px;
+    min-height: 180px;
+    position: relative;
+    overflow: hidden;
+    animation: glow 4s ease-in-out infinite;
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 15px rgba(124, 77, 255, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(124, 77, 255, 0.5);
+    }
+  }
+  
+  .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #7c4dff33, transparent);
+    transition: all 0.5s ease;
+    z-index: 0;
+  }
+  
+  .box:hover::before {
+    left: 100%;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(124, 77, 255, 0.6);
+  }
+  
+  .box p {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 1024px) {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 30px 30px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .header-left,
+    .header-right {
+      justify-content: center;
+    }
+  
+    .header-left h1 {
+      font-size: 1.5rem;
+    }
+  
+    .header-left h1::after {
+      width: 40%;
+    }
+  
+    main {
+      grid-template-columns: 1fr;
+      padding: 30px 20px;
+      gap: 20px;
+    }
+  
+    .box {
+      font-size: 1rem;
+      min-height: 160px;
+    }
+  }
+  
+  .box-icon {
+    font-size: 1.8rem; /* tamanho mais proporcional */
+    margin-bottom: 10px;
+    color: #bda6ff;
+    text-shadow: 0 0 6px #7c4dffcc;
+    display: block;
+  }
+
+
